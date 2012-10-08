@@ -1,1 +1,1 @@
-web: bundle exec highcarb --http-port $PORT .
+web: bundle exec highcarb --no-ws --http-port $PORT .
