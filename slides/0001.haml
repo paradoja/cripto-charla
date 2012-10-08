@@ -52,30 +52,6 @@
     .derecha
       Motivación
 
-  %h1 Organización de la charla
-
-  %ol
-    %li
-      Motivación
-      %ul
-        %li Privacidad
-        %li Libertad
-    %li
-      Criptografía
-      %ul
-        %li 2a26bd82af5130fa882319e2024d3268
-    %li
-      Practicando un poco
-      %ul
-        %li Mandando mensajes cifrados
-        %li Mensajería instantánea segura
-        %li Webs seguras, navegación anónima
-
-.slide
-  .cabecera
-    .derecha
-      Motivación
-
   %h1 Privacidad en un mundo informatizado
 
   %ul.note
@@ -125,29 +101,32 @@
     %li 25S, 29S
     %li Incompetencia, perder datos
 
+  .slide
+    %ul
+      %li Si no tienes nada que ocultar...
+      %li.note ... también tienes mucho que temer
+
+    %ul.slide
+      %li
+        Si tienen información nuestra:
+        %ul.only-current.slide
+          %li Las reglas cambian
+          %li No sabemos cómo se interpretará la información
+          %li No sabemos que la información que hay sea certera
+
+        %ul.slide
+          %li Las reglas cambian ⇨ La información tiende a durar más de lo esperado
+          %li No sabemos cómo se interpretará la información ⇨ Ni quién la verá
+          %li No sabemos que la información que hay sea certera
+
+    %ul.note
+      %li Gobiernos y empresas usan nuestros datos.
+
 .slide
   .cabecera
     .derecha
       Motivación
 
-  %h1 Si no tienes nada que ocultar...
-
-  %ul.note
-    %li ... también tienes mucho que temer
-
-  Si tienen información nuestra:
-  %ul.only-current.slide
-    %li Las reglas cambian
-    %li No sabemos cómo se interpretará la información
-    %li No sabemos que la información que hay sea certera
-
-  %ul.slide
-    %li Las reglas cambian ⇨ La información tiende a durar más de lo esperado
-    %li No sabemos cómo se interpretará la información ⇨ Ni quién la verá
-    %li No sabemos que la información que hay sea certera
-
-  %ul.note
-    %li Gobiernos y empresas usan nuestros datos.
 
 .slide
   .cabecera
@@ -159,3 +138,6 @@
     \  #!/bin/perl -sp0777i&lt;X+d*lMLa^*lN%0]dsXx++lMlN/dsM0&lt;j]dsj
     $/=unpack('H*',$_);$_=`echo 16dio\U$k"SK$/SM$n\EsN0p[lN*1
     lK[d2%Sa2/d0$^Ixp"|dc`;s/\W//g;$_=pack('H*',/((..)*)$/)
+
+  %ul.note
+    %li RSA
