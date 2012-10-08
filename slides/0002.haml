@@ -1,0 +1,143 @@
+-# coding: utf-8
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Criptografía
+
+  %ul.note
+    %li Qué es criptografía, criptoanálisis, criptología
+    %li introducción histórica breve
+    %li César
+
+  %ul.slide
+    %li Criptología
+    %ul
+      %li Criptografía
+      %li Criptoanálisis
+
+  %ul.slide
+    %li CAESAR ⇨ FDHVDU
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Criptografía antigua
+
+  %asset caesar.svg
+
+  %ul.note
+    %li Explicación breve
+    %li Podemos complicarlo más, no desplazar 3, sino más. O desplazar distinto según la posición... o lo que sea
+    %li ¡¡¡!!! Sólo sirve para evitar que se lea un mensaje
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 El fin de la criptografía clásica
+
+  %asset enigma.jpg
+  &nbsp;
+  %asset alan_turing.jpg
+
+  %ul.note
+    %li Hablar de WWII, Turing, Bletchley Park
+    %li Muchas mates, y también ordenadores
+    %li Hoy día la criptografía sirve para evitar que un mensaje se lea, pero también para mucho más. Ver protocolos.
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Claves y algoritmos
+
+  %ul
+    %li Texto plano
+    %li Texto cifrado
+
+  %ul.slide
+    %li Algoritmo / Cifrado
+    %li Clave
+
+  %ul.note
+    %li Algoritmos abiertos, públicos. Explicar por qué
+    %li La seguridad en la clave
+    %li Problema de intercambio de claves
+    %li Ejemplos de claves: posiciones de rotores, desplazamiento en César
+    %li Algoritmos abiertos, los cerrados no molan: el secreto no es un buen sistema de seguridad
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Protocolos
+
+  %ul.note
+    %li Describir protocolos
+
+  %ul.slide
+    %li Envío de mensajes secretos (confidencialidad)
+    %li Autenticación
+    %li Integridad
+    %li No repudio / No rechazo
+
+  %ul.slide
+    %li Cifrados negables
+    %li Elecciones seguras
+    %li Posibilidad de repudio
+    %li ...
+    %li.note Demostrar que se sabe algo, sin sacar lo que se sabe
+    %li.note Fully Homomorphic Cryptography
+    %li.note Moneda digital - Bitcoin
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Criptografía simétrica
+
+  %asset simetrico.png
+
+  %ul.note
+    %li Explicar
+    %li Con esto (sin pensar mucho) tenemos confidencialidad, autenticación, integridad, pero no no-repudio. Tampoco vamos a centrarnos en eso.
+    %li Ataques: robo de clave, que uno haga trampa. El principal peligro, en el intercambio de clave.
+    %li El problema principal es el intercambio de claves. ¿Cómo lo hacemos a gran escala? Blah, blah..
+    %li => Páginas web seguras (problema)
+    %li Recordar que del cyphertext no se saca nada del plaintext
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Funciones de un sólo sentido
+
+  %asset hash.png
+
+  %ul.note
+    %li fáciles de calcular pero _difíciles_ de invertir
+    %li Sirven para certificar, garantizar que un fichero es lo que tiene que ser (programas por internet, predicciones...)
+    %li Si existen, P != NP . Creemos que sí existen.
+    %li Sirven para claves en un servidor
+
+.slide
+  .cabecera
+    .derecha
+      Criptografía
+
+  %h1 Criptografía de clave pública
+
+  %asset publica.png
+
+  %ul.note
+    %li Explicar
+    %li ...

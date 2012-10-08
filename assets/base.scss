@@ -1,0 +1,85 @@
+/*
+ * Write here your own styles.
+ * Compass modules are available
+ */
+
+
+@import url('/assets/vendor/deck.js/themes/style/swiss.css');
+@import url('/assets/vendor/deck.js/themes/transition/horizontal-slide.css');
+
+$tam-cabecera: 25px;
+$margen-bajo-cabecera: 10px;
+
+.cabecera {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: $tam-cabecera;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: medium;
+
+    img {
+        height: $tam-cabecera;
+    }
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+.derecha {
+    float: right;
+}
+
+.centro {
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+#clave-portada {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
+    padding: 0;
+}
+
+.highlight {
+    border: blue 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.but-current {
+    display: inline;
+}
+
+.only-current {
+    display: none;
+}
+
+.deck-current {
+    &.but-current {
+        display: none;
+    }
+
+    &.only-current {
+        display: block;
+    }
+}
+
+img {
+    vertical-align: top;
+}
